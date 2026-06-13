@@ -212,12 +212,12 @@ export default function MapSection() {
                     <Geography
                       key={geo.rsmKey}
                       geography={geo}
-                      fill="#1a202c"
-                      stroke="#334155"
+                      fill="#2a3341"
+                      stroke="#42526b"
                       strokeWidth={0.5}
                       style={{
                         default: { outline: "none" },
-                        hover: { fill: "#272e3a", outline: "none" },
+                        hover: { fill: "#364254", outline: "none" },
                         pressed: { outline: "none" },
                       }}
                     />
@@ -238,16 +238,16 @@ export default function MapSection() {
                   }}
                 >
                   <circle
-                    r={4}
+                    r={5}
                     fill={
                       activeLocation.id === loc.id
                         ? "var(--color-accent-amber)"
-                        : "#e2e8f0"
+                        : "#ffffff"
                     }
                     className="transition-colors duration-300"
                   />
                   <circle
-                    r={10}
+                    r={12}
                     fill="transparent"
                     stroke={
                       activeLocation.id === loc.id
